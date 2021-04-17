@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick Random person from Alan Turing class</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>Random Alan Turing Picker</h1>
+      <h2 id="randomName"></h2>
+      <button id="btn" onclick="brint()">Pick Student</button>
+    </div>
+    <script>
+      var Students = [
+        "Moncef Chouaib",
+        "Belbhiriya Zineb",
+        "Laila Fikri",
+        "Abdessabour Bourras",
+        "Walid Moultamiss",
+        "Achraf Harimza",
+        "Karim Baggari",
+        "Youssef ElBakkouri",
+        "Youssef Hajjari",
+        "Mahdi Rammach",
+        "ELMahdi ELBoustani",
+        "Hamza Bouchikhi",
+        "Rania Lamtabti",
+        "Mohammed Elkabli",
+        "Othmane Kahtal",
+        "Yahya Naim",
+        "Ayoub Mabrouk",
+        "Abdoulaadim Mabrouki",
+        "Aya Nait-laz",
+        "Adam Khomsi",
+        "Yassine Ghouaj",
+        "Youness Hassoune",
+        "Sif eddine Rkhis",
+        "Hamza Landaoui",
+
+      ];
+      
+      let randomName = document.getElementById("randomName");
+      function brint() {
+        var random = Math.floor(Math.random() * Students.length);
+        var Picked = Students[random];
+        randomName.innerHTML = Picked;
+      }
+    </script>
+  </body>
+</html>

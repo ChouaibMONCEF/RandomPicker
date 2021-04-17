@@ -1,0 +1,31 @@
+* {
+    align-items: center;
+    font-family: monospace;
+    text-align: center;
+    background: linear-gradient(to right, rgb(145, 77, 190), rgb(154, 117, 197))
+}
+
+.container {
+    margin-top: 30vh;
+}
+
+h1 {
+    font-size: 50px;
+}
+h2 {
+    margin-bottom: 35px;
+    font-size: 35px;
+}
+
+#btn {
+    border: solid 2px ;
+    padding: 15px 55px;
+    border-radius: 2px;
+    background-color: midnightblue;
+    font-size: 15px;
+    outline: none;
+}
+#btn:hover {
+    opacity: 0.75;
+}
+
